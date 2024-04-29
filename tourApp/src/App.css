@@ -1,0 +1,139 @@
+/* App.css */
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all children horizontally */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 2.5rem;
+  padding: 10px;
+  border-bottom: 3px solid #007bff;
+  border-top: 3px solid #007bff;
+  animation: titleAnimation 1s infinite alternate;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: cardAnimation 1s ease-in-out;
+}
+
+@keyframes cardAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .tour-info {
+  padding: 20px;
+}
+
+.card .tour-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .tour-price {
+  color: #ff5722;
+}
+
+.card .description {
+  margin-top: 20px;
+  color: #666;
+}
+
+.card .readmore {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.btn-red {
+  display: block;
+  width: 80%;
+  padding: 8px 0;
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  animation: btnAnimation 1s infinite alternate;
+}
+
+@keyframes btnAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.btn-red:hover {
+  background-color: #c82333;
+}
+
+.refresh {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.refresh-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.refresh-btn:hover {
+  background-color: #0056b3;
+}

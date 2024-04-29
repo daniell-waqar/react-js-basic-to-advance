@@ -1,0 +1,25 @@
+/* ProductItem.css */
+.product-item {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+ }
+      
+
+.product-item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-date {
+    flex: 1;
+    color: black;
+}
+   
+.product-info {
+    flex: 1;
+    text-align: right;
+}
+

@@ -1,0 +1,12 @@
+.product-date-container {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    padding: 5px 0;
+}
+.product-day,
+.product-month,
+.product-year {
+    flex: 1;
+    text-align: center;
+}

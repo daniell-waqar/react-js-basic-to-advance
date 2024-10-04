@@ -1,0 +1,19 @@
+.pipes {
+    position: absolute;
+  }
+  
+  .pipe-top,
+  .pipe-bottom {
+    position: absolute;
+    width: 60px;
+    background-color: green;
+  }
+  
+  .pipe-top {
+    top: 0;
+  }
+  
+  .pipe-bottom {
+    height: calc(100vh - 150px);
+  }
+  
